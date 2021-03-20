@@ -1,0 +1,7 @@
+.idea/
+
+## Files for Visual Studio
+.vs/
+*.sln
+bin/
+obj/

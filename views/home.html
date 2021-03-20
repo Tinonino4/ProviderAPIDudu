@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>MBIT Provider Football Events!</title>
+
+    <link rel="stylesheet" href="/../stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+    <link rel="stylesheet" href="/../stylesheets/main.css">
+
+    <script src="/../javascripts/jquery.min.js"></script>
+    <script src="/../javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/../javascripts/controller.js"></script>
+
+</head>
+<body>
+
+<section class="section" style="margin-top: 60px;">
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <h1>Bienvenidos a la API de eventos de fútbol de MBIT!!</h1>
+        </div>
+    </div>
+</section>
+
+<md-divider></md-divider>
+
+<section class="section" style="margin-top: 60px;">
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <p>
+                Esta aplicación está configurada para enviar un evento cada segundo que corresponde a
+                un evento de cada minuto de un partido.
+                <br>
+                <br>
+                Es decir, si pulsamos el botón se enviarán un total de 90 mensajes a un Azure Storage
+                Container con un intervalo entre mensajes de 1 segundo. Cada mensaje simula un evento
+                en un minuto del partido. Por ejemplo, un mensaje sería: Minuto 10, Accion 'Ataque peligroso'
+                <br>
+                <br>
+                El objetivo de esta aplicación es simular a una API que nos manda mensajes, y así en lugar
+                de tener que subirlos nosotros a Azure, directamente conectamos nuestra aplicación
+                al contenedor.
+                <br>
+                <br>
+                Será nuestro punto de partida para las sesiones de Azure... ¿estáis preparados para
+                ser los mejores ingenieros de big data del fútbol?
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="margin-top: 30px;">
+    <div class="container">
+        <div class="row" style="text-align: center; margin: auto;">
+            <button id="sendevents" class="btn btn-primary" onclick="sendEvents()" style="margin: auto;">ENVIAR EVENTOS DEL PARTIDO!</button>
+        </div>
+    </div>
+</section>
+
+<section style="margin-top: 200px;"></section>
+</body>
+</html>
